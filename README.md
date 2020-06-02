@@ -19,8 +19,4 @@ switch-sdl2_gfx
 switch-sdl2_image
 switch-sdl2_ttf
 ```
-Once these are installed, you need to add Aether as a git submodule, since GitHub currently does not carry them over when you create repos from templates. To do this run:
-```
-git submodule add https://github.com/tallbl0nde/Aether.git libs/Aether
-```
-When that's all done, simply run `make` in the project directory.
+Once these are installed, simply run `make` in the project directory.
