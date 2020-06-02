@@ -3,6 +3,12 @@ A Switch Homebrew app using the [Aether UI library](https://github.com/tallbl0nd
 
 Documentation of Aether can be found [here](https://tallbl0nde.github.io/Aether/).
 
+## Branches
+This template repository contains 3 branches:
+- `master`: contains example code
+- `clean`: simplified starter code without the example and comments
+- `portlibs`: same as `clean`, but does not use Aether as a submodule but from dkp's portlibs dir instead
+
 ## Building
 You'll need the following packages installed through (dkp-)pacman in order to compile this template app:
 ```
@@ -13,4 +19,8 @@ switch-sdl2_gfx
 switch-sdl2_image
 switch-sdl2_ttf
 ```
-Once these are installed, simply run `make` in the project directory.
+Once these are installed, you need to add Aether as a git submodule, since GitHub currently does not carry them over when you create repos from templates. To do this run:
+```
+git submodule add https://github.com/tallbl0nde/Aether.git libs/Aether
+```
+When that's all done, simply run `make` in the project directory.
