@@ -10,8 +10,8 @@ class Application {
         return s_instance;
     }
 
-    // First we need to create the display 'element'
-    // It acts as our 'root' element for everything on screen
+    // We need to create the display 'element'
+    // It acts as our 'root element' for everything on screen
     Aether::Display m_display;
 
    public:

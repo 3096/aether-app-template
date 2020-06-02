@@ -55,4 +55,6 @@ MainScreen::MainScreen() {
     ctrls->addItem(itm);
 }
 
-MainScreen::~MainScreen() {}
+MainScreen::~MainScreen() {
+    // the parent descructor will clean everything up for us as long is the element is added to the screen
+}
